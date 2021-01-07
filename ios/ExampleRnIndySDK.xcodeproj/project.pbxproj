@@ -19,6 +19,8 @@
 		5D07C26C3E23E142E4543FEE /* libPods-ExampleRnIndySDK-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B0B7077D631B5AE25839732E /* libPods-ExampleRnIndySDK-tvOS.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		E6C421B763420F8C67367CA3 /* libPods-ExampleRnIndySDK-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EC45FC0689857EFF14C3F54A /* libPods-ExampleRnIndySDK-tvOSTests.a */; };
+		F21F069D25A6A10D007899F7 /* Indy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F21F069C25A6A10D007899F7 /* Indy.framework */; };
+		F21F069E25A6A10D007899F7 /* Indy.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F21F069C25A6A10D007899F7 /* Indy.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F360FE2579AFF458EAA06540 /* libPods-ExampleRnIndySDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 809DD8B063AC5E43B9714457 /* libPods-ExampleRnIndySDK.a */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +40,20 @@
 			remoteInfo = "ExampleRnIndySDK-tvOS";
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F2CDCB2125A69A08004E6028 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F21F069E25A6A10D007899F7 /* Indy.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
@@ -66,6 +82,7 @@
 		EC5546A4D23444C3A6F64A0D /* Pods-ExampleRnIndySDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleRnIndySDK.release.xcconfig"; path = "Target Support Files/Pods-ExampleRnIndySDK/Pods-ExampleRnIndySDK.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
+		F21F069C25A6A10D007899F7 /* Indy.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Indy.framework; path = Pods/Frameworks/Indy.framework; sourceTree = "<group>"; };
 		FDBFF8E16154B02ED784AD2A /* Pods-ExampleRnIndySDK-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleRnIndySDK-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-ExampleRnIndySDK-tvOS/Pods-ExampleRnIndySDK-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F21F069D25A6A10D007899F7 /* Indy.framework in Frameworks */,
 				F360FE2579AFF458EAA06540 /* libPods-ExampleRnIndySDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,6 +157,7 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F21F069C25A6A10D007899F7 /* Indy.framework */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
 				809DD8B063AC5E43B9714457 /* libPods-ExampleRnIndySDK.a */,
@@ -161,7 +180,6 @@
 				32E2A126BC969262EBD4CFEA /* Pods-ExampleRnIndySDK-tvOSTests.debug.xcconfig */,
 				3BC24572089CEFA71803DA91 /* Pods-ExampleRnIndySDK-tvOSTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -232,6 +250,7 @@
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				95913C0B93B6BD6653FAAB81 /* [CP] Copy Pods Resources */,
+				F2CDCB2125A69A08004E6028 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -294,6 +313,7 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
+						DevelopmentTeam = UG66RMK356;
 						LastSwiftMigration = 1120;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
@@ -656,8 +676,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UG66RMK356;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/Frameworks",
+				);
 				INFOPLIST_FILE = ExampleRnIndySDK/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -679,7 +705,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UG66RMK356;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/Frameworks",
+				);
 				INFOPLIST_FILE = ExampleRnIndySDK/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
