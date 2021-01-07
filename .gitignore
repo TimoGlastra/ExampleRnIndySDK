@@ -56,5 +56,5 @@ buck-out/
 *.jsbundle
 
 # CocoaPods
-/ios/Pods/
-!/ios/Pods/Frameworks
+ios/Pods/*
+!ios/Pods/Frameworks/Indy.framework
